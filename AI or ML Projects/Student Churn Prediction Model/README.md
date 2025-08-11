@@ -21,7 +21,9 @@ Student Churn Prediction Model/
 ├── churn_model.pkl         # Trained ML model
 │
 ├── output/                 # Predictions will be saved in a CSV file in this folder
-│   └── predictions.csv     # This file is created after running the main.py file
+│   └── predictions.csv     # CSV File Containing Predictions
+│   └── tree_visualization.png     # Image file containing a tree visualisation for the prediciton pathway of the model.
+│   └── feature_importance.png     # Image file containing the visualisation for the importance of each feature in the model.
 ├── main.py                 # Driver code
 │
 ├── dependencies.txt        # Required Python packages
@@ -43,4 +45,5 @@ Ensure the filenames match those in main.py or update the script accordingly.
 ### 1. To run predictions
 `python main.py`
 ### 2. Prepare input files
+
 The output will be saved in output/predictions.csv.
