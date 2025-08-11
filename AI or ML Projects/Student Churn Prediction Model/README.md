@@ -8,7 +8,7 @@ It uses a trained machine learning model stored in `churn_model.pkl`.
 ## 📂 Folder Structure
 Student Churn Prediction Model/
 │
-├── Main_Notebook.ipynb     # The jupyter notebook on which the bulk of the project was made. The main.py program borrows the majority of the code from this file.
+├── Main_Notebook.ipynb     # The jupyter notebook on which the bulk of the project was made. The main.py program borrows the majority of the code from this file. │                           # In essence, it does the same thing as the main.py file. But it has a sequential order of each step taken during the project.
 ├── data/                   # where the input CSV files are stored
 │   ├── invoices.csv
 │   ├── marks.csv
@@ -47,3 +47,5 @@ Ensure the filenames match those in main.py or update the script accordingly.
 ### 2. Prepare input files
 
 The output will be saved in output/predictions.csv.
+
+The visuals for the model will also be saved in output/feature_importance.png and output/tree_visualization.png.
