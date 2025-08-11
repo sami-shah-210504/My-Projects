@@ -131,12 +131,12 @@ def transform_all_data(inv_df, marks_df, df_a1, df_a2, df_a3, df_a4):
 
 
 
-df_a1 = pd.read_csv(r"C:\Users\syeds\Downloads\Student Churn Prediction Model\data\att1.csv")
-df_a2 = pd.read_csv(r"C:\Users\syeds\Downloads\Student Churn Prediction Model\data\att2.csv")
-df_a3 = pd.read_csv(r"C:\Users\syeds\Downloads\Student Churn Prediction Model\data\att3.csv")
-df_a4 = pd.read_csv(r"C:\Users\syeds\Downloads\Student Churn Prediction Model\data\att4.csv")
-invoices=pd.read_csv(r"C:\Users\syeds\Downloads\Student Churn Prediction Model\data\invoices.csv")
-marks=pd.read_csv(r"C:\Users\syeds\Downloads\Student Churn Prediction Model\data\marks.csv")
+df_a1 = pd.read_csv(r"data\att1.csv")
+df_a2 = pd.read_csv(r"data\att2.csv")
+df_a3 = pd.read_csv(r"data\att3.csv")
+df_a4 = pd.read_csv(r"data\att4.csv")
+invoices=pd.read_csv(r"data\invoices.csv")
+marks=pd.read_csv(r"data\marks.csv")
 df = transform_all_data(invoices, marks, df_a1, df_a2, df_a3, df_a4)
 df
 
@@ -197,3 +197,4 @@ merged_df['Churn_Probability'] = y_new_proba
 # ==== Save results to 'output' folder ====
 merged_df.to_csv(output_file, index=False)
 print(f"Predictions saved to {output_file}")
+
