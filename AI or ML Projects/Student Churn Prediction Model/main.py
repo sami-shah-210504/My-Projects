@@ -155,6 +155,8 @@ for col in ['FINAL_YEAR_PCT', 'MID_YEAR_PCT']:
 merged_df['FINAL_YEAR_PCT'] = merged_df['FINAL_YEAR_PCT'].fillna(merged_df['FINAL_YEAR_PCT'].median())
 merged_df['MID_YEAR_PCT'] = merged_df['MID_YEAR_PCT'].fillna(merged_df['MID_YEAR_PCT'].median())
 
+# Filter out students with 100% unpaid invoices
+merged_df = merged_df[merged_df['PERCENTAGE_UNPAID_INVOICES'] != 100]
 
 features = ['SYSTEM_ID', 'PERCENTAGE_UNPAID_INVOICES', 'PERCENTAGE_LATE_INVOICES',
             'MID_YEAR_PCT', 'FINAL_YEAR_PCT', 'Attendance_Percentage']
