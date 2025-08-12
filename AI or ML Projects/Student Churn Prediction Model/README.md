@@ -24,6 +24,7 @@ Student Churn Prediction Model/
 │   └── predictions.csv     # CSV File Containing Predictions
 │   └── tree_visualization.png     # Image file containing a tree visualisation for the prediciton pathway of the model.
 │   └── feature_importance.png     # Image file containing the visualisation for the importance of each feature in the model.
+│   └── Student_Churn_Dashboard.pbix  # PowerBI Dashboard conatining summarising stats
 ├── main.py                 # Driver code
 │
 ├── dependencies.txt        # Required Python packages
