@@ -49,3 +49,16 @@ Ensure the filenames match those in main.py or update the script accordingly.
 The output will be saved in output/predictions.csv.
 
 The visuals for the model will also be saved in output/feature_importance.png and output/tree_visualization.png.
+
+## Important Note
+The input data *must* be in the following format;
+### 1. Attendance Data:
+Should be given in *four* CSV files.
+*Must* have the columns 'ATT_STATUS', 'ATT_DATE', and 'SYSTEM_ID'.
+Each file should be named 'att1.csv', 'att2.csv', etc.
+### 2. Invoice Data:
+*Must* have the columns 'PAID_DATE', 'DUE_DATE', 'SYSTEM_ID'.
+File should be named 'invoice.csv'.
+### 3. Grades Data:
+*Must* have the columns 'TERM_NAME', 'SUBJECT_NAME', 'OBTAINED_MARKS', 'TOTAL_MARKS', 'SYSTEM_ID'.
+File should be named 'marks.csv'.
